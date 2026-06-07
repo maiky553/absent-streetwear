@@ -1,0 +1,425 @@
+ñ´ñ´ñ<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@bsent — Streetwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="cur-ring"></div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">★ Añadido al carrito</div>
+
+  <!-- MODAL -->
+  <div class="modal-bg" id="modal">
+    <div class="modal">
+      <div class="modal-img">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="modal-info">
+        <button class="modal-close" id="modal-close">✕</button>
+        <p class="modal-label">@bsent — SS25</p>
+        <h2 class="modal-name" id="modal-name"></h2>
+        <p class="modal-price" id="modal-price"></p>
+        <p class="modal-desc" id="modal-desc"></p>
+        <p class="modal-sizes-label">Talla</p>
+        <div class="modal-sizes">
+          <button class="size-btn">XS</button>
+          <button class="size-btn">S</button>
+          <button class="size-btn active">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+          <button class="size-btn">XXL</button>
+        </div>
+        <button class="btn-primary modal-add" id="modal-add-btn">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="logo">
+      <span class="logo-star">★</span> @bsent
+    </a>
+    <ul class="nav-links">
+      <li><a href="#coleccion">Colección</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#drops">Drops</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-btn" title="Buscar">⌕</button>
+      <button class="nav-btn" title="Carrito">◻</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Nueva Colección SS25</p>
+      <h1 class="hero-title">
+        <span class="text-red">★</span><br>
+        STREET<br>
+        <span class="text-outline">WEAR</span><br>
+        CULTURE
+      </h1>
+      <p class="hero-desc">
+        Nacidos en San Luis, Santiago de Cuba. Diseñados para los que llevan su cultura a donde quiera que vayan. No es moda — es identidad.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary" data-scroll="coleccion">Ver Colección</button>
+        <button class="btn-ghost" data-scroll="lookbook">Lookbook</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img_group.png" alt="@bsent SS25">
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">@bsent</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">San Luis, Cuba</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Drop Culture</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Ausente de allá</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Presente en todo</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Born In The Streets</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">@bsent</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">San Luis, Cuba</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Drop Culture</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Ausente de allá</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Presente en todo</span><span class="marquee-sep">★</span>
+      <span class="marquee-item">Born In The Streets</span><span class="marquee-sep">★</span>
+    </div>
+  </div>
+
+  <!-- COLECCIÓN -->
+  <section class="products fade-up" id="coleccion">
+    <div class="section-header">
+      <div>
+        <p class="section-label">SS25 Drop 01</p>
+        <h2 class="section-title">Colección</h2>
+      </div>
+      <a href="#" class="section-link">Ver todo →</a>
+    </div>
+
+    <div class="filter-wrap">
+      <button class="filter-btn active" data-filter="all">Todo</button>
+      <button class="filter-btn" data-filter="tee">Camisetas</button>
+      <button class="filter-btn" data-filter="pants">Pantalones</button>
+      <button class="filter-btn" data-filter="hoodie">Sudaderas</button>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card featured" data-cat="tee"
+        data-img="tee_white_model.png"
+        data-name="Star Tee White — SS25"
+        data-price="45 €"
+        data-desc="Camiseta oversized en algodón 100% orgánico. Serigrafía del logo @bsent en rojo en el pecho. Corte dropped shoulder, largo caído.">
+        <div class="product-img">
+          <img src="tee_white_model.png" alt="Star Tee White">
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-name">★ Star Tee White — SS25</p>
+          <p class="product-price">45 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="tee"
+        data-img="tee_white_flat.png"
+        data-name="Star Tee White"
+        data-price="45 €"
+        data-desc="Camiseta oversized blanca con el logo @bsent en gran formato. Algodón ring-spun 220g/m², serigrafía plastisol roja.">
+        <div class="product-img">
+          <img src="tee_white_flat.png" alt="Star Tee White">
+          <span class="product-badge">Nuevo</span>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Star Tee White</p>
+          <p class="product-price">45 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="tee"
+        data-img="tee_black_flat.png"
+        data-name="Star Tee Black"
+        data-price="45 €"
+        data-desc="Versión negra de la tee estrella. Logo bordado pequeño en el pecho izquierdo. Algodón pesado 220g/m², corte oversized.">
+        <div class="product-img">
+          <img src="tee_black_flat.png" alt="Star Tee Black">
+        </div>
+        <div class="product-info">
+          <p class="product-name">Star Tee Black</p>
+          <p class="product-price">45 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="pants"
+        data-img="cargo_black_flat.png"
+        data-name="Cargo Pant Black"
+        data-price="85 €"
+        data-desc="Pantalón cargo negro oversized con cadena metálica incluida. Cinturilla elástica, bolsillos laterales con argollas. Logo @bsent bordado en la pierna.">
+        <div class="product-img">
+          <img src="cargo_black_flat.png" alt="Cargo Black">
+          <span class="product-badge">Drop Limitado</span>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Cargo Pant Black</p>
+          <p class="product-price">85 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="pants"
+        data-img="camo_flat.png"
+        data-name="Camo Baggy Pant"
+        data-price="90 €"
+        data-desc="Pantalón baggy en print camuflaje urbano blanco y gris. Corte extremadamente ancho, cinturilla elástica con cordón ajustable. Logo @bsent en rojo.">
+        <div class="product-img">
+          <img src="camo_flat.png" alt="Camo Pant">
+          <span class="product-badge">Nuevo</span>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Camo Baggy Pant</p>
+          <p class="product-price">90 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="pants"
+        data-img="camo_model.png"
+        data-name="Camo Baggy — Look"
+        data-price="90 €"
+        data-desc="El Camo Baggy en acción. Combínalo con la tee blanca de @bsent y unas botas para el look completo del Drop 01.">
+        <div class="product-img">
+          <img src="camo_model.png" alt="Camo Model">
+        </div>
+        <div class="product-info">
+          <p class="product-name">Camo Baggy — Look</p>
+          <p class="product-price">90 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="pants"
+        data-img="baggy_grey_flat.png"
+        data-name="Wide Leg Grey"
+        data-price="80 €"
+        data-desc="Wide-leg en denim gris vintage. Cinco bolsillos clásicos, logo @bsent bordado en rojo. El pantalón más versátil del drop.">
+        <div class="product-img">
+          <img src="baggy_grey_flat.png" alt="Baggy Grey">
+        </div>
+        <div class="product-info">
+          <p class="product-name">Wide Leg Grey</p>
+          <p class="product-price">80 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="pants"
+        data-img="baggy_grey_model.png"
+        data-name="Wide Leg Grey — Look"
+        data-price="80 €"
+        data-desc="El Wide Leg Grey sobre la calle. Aquí se ve el fit real — ancho, cómodo, con caída perfecta.">
+        <div class="product-img">
+          <img src="baggy_grey_model.png" alt="Baggy Grey Model">
+        </div>
+        <div class="product-info">
+          <p class="product-name">Wide Leg Grey — Look</p>
+          <p class="product-price">80 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="pants"
+        data-img="jeans_black_flat.png"
+        data-name="Star Jeans Black"
+        data-price="85 €"
+        data-desc="Jean wide-leg en denim negro lavado con cadena metálica incluida. Logo @bsent bordado en rojo en la pierna derecha.">
+        <div class="product-img">
+          <img src="jeans_black_flat.png" alt="Jeans Black">
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Star Jeans Black</p>
+          <p class="product-price">85 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+      <div class="product-card" data-cat="hoodie"
+        data-img="hoodie_model.png"
+        data-name="Zip Hoodie Black"
+        data-price="95 €"
+        data-desc="Sudadera con cremallera completa en negro. Fleece pesado 380g/m², logo @bsent y estrella roja bordados en el pecho.">
+        <div class="product-img">
+          <img src="hoodie_model.png" alt="Zip Hoodie">
+          <span class="product-badge">Drop Limitado</span>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Zip Hoodie Black</p>
+          <p class="product-price">95 €</p>
+        </div>
+        <button class="product-add">+</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="lookbook fade-up" id="lookbook">
+    <img src="img_duo.png" alt="@bsent Lookbook SS25">
+    <div class="lookbook-overlay">
+      <h2 class="lookbook-title">
+        BORN<br>
+        <span class="text-red">IN THE</span><br>
+        STREETS
+      </h2>
+      <button class="btn-primary">Ver Lookbook SS25</button>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about fade-up" id="nosotros">
+    <div class="about-bg-text">@B</div>
+    <div class="about-content">
+      <p class="section-label">Nuestra Historia</p>
+      <h2 class="about-title">
+        DE SAN LUIS<br>
+        PA' <span class="text-red">EL MUNDO</span>
+      </h2>
+      <p>@bsent no es una marca de moda. Es una declaración. Nació en San Luis, Santiago de Cuba, donde la creatividad no tiene límites porque los recursos sí los tienen.</p>
+      <p>En Cuba nadie te regala nada. Te lo trabajas. Te lo imaginas. Te lo construyes. Esa energía — esa necesidad de crear belleza desde la escasez — es el ADN de @bsent.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Algodón Orgánico</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Ltd.</span>
+          <span class="stat-label">Edición Limitada</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">EU</span>
+          <span class="stat-label">Producción Europa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DROP / COUNTDOWN -->
+  <section class="drop fade-up" id="drops">
+    <div class="drop-inner">
+      <div class="drop-text">
+        <p class="section-label">Próximo Drop</p>
+        <h2 class="drop-title">DROP 02<br>SS25</h2>
+        <p>La segunda entrega llega cargada. Nuevas siluetas, colaboración con artista cubano. Regístrate para acceso anticipado.</p>
+        <button class="btn-primary">Acceso Anticipado</button>
+      </div>
+      <div class="countdown">
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-days">00</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-hours">00</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-mins">00</span>
+          <span class="countdown-label">Min</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block">
+          <span class="countdown-num" id="cd-secs">00</span>
+          <span class="countdown-label">Seg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <div class="gallery fade-up">
+    <div class="gallery-item"><img src="tee_white_model.png" alt="Look 1"></div>
+    <div class="gallery-item"><img src="cargo_black_flat.png" alt="Look 2"></div>
+    <div class="gallery-item"><img src="camo_model.png" alt="Look 3"></div>
+    <div class="gallery-item"><img src="hoodie_model.png" alt="Look 4"></div>
+    <div class="gallery-item"><img src="baggy_grey_model.png" alt="Look 5"></div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter fade-up">
+    <p class="section-label">Comunidad @bsent</p>
+    <h2 class="newsletter-title">
+      SÉ EL<br>PRIMERO<br>EN <span class="text-red">SABER</span>
+    </h2>
+    <p class="newsletter-desc">Acceso anticipado a cada drop, contenido exclusivo y noticias antes que nadie.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="tu@email.com">
+      <button class="btn-primary">Unirse</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="logo-star">★</span> @bsent</a>
+        <p>Marca de streetwear nacida en San Luis, Santiago de Cuba. Ausente de allá. Presente en todo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="#">Camisetas</a></li>
+          <li><a href="#">Pantalones</a></li>
+          <li><a href="#">Sudaderas</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#">Sobre @bsent</a></li>
+          <li><a href="#">Lookbook SS25</a></li>
+          <li><a href="#">Próximos Drops</a></li>
+          <li><a href="#">Colaboraciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Devoluciones</a></li>
+          <li><a href="#">Tallas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 @bsent. San Luis, Santiago de Cuba. Todos los derechos reservados.</p>
+      <div class="footer-socials">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
